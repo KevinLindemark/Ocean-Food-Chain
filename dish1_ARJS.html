@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<!-- we import arjs version without NFT but with marker + location based support -->
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<script src="script-arjs.js"></script>
+<link rel="stylesheet" href="style-arjs.css">
+<body>
+  <a-scene embedded arjs arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" embedded
+    renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+    <!-- I need a way to change the link and value of the button acording to the marker detected-->
+    <div class="buttons">
+      <button id="hi" class="say-hi-button">Inspect</button>
+    </div>
+
+    <a-assets>
+      <a-asset-item id="bowser" src="assets/3D-models/copepod/scene.gltf">
+      </a-asset-item>
+    </a-assets>
+    <a-marker markerhandler type='barcode' value='7' preset="hiro" raycaster="objects: .clickable" emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+
+      <a-entity id="bowser-model" gltf-model="#bowser" position="0 0 0" scale="0.09 0.09 0.09" class="clickable"
+        animation-mixer gesture-handler>
+      </a-entity>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
