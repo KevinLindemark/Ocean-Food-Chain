@@ -1,0 +1,11 @@
+Model Information:
+* title:	Daphnia
+* source:	https://sketchfab.com/3d-models/daphnia-b605ff408ce347b2a690152efbe6aa2f
+* author:	Museo Nacional de Historia Natural de Chile (https://sketchfab.com/MNHNcl)
+
+Model License:
+* license type:	CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)
+* requirements:	Credit is not mandatory. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Daphnia" (https://sketchfab.com/3d-models/daphnia-b605ff408ce347b2a690152efbe6aa2f) by Museo Nacional de Historia Natural de Chile (https://sketchfab.com/MNHNcl) licensed under CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)
