@@ -8,8 +8,8 @@
 <script src="script-arjs.js"></script>
 <link rel="stylesheet" href="style-arjs.css">
 <body>
-  <a-scene embedded arjs arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" embedded
-    renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" embedded
+    renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene" >
     <!-- I need a way to change the link and value of the button acording to the marker detected-->
     <div class="buttons">
       <button id="hi" class="say-hi-button">Inspect</button>
@@ -19,7 +19,7 @@
       <a-asset-item id="bowser" src="assets/3D-models/copepod/scene.gltf">
       </a-asset-item>
     </a-assets>
-    <a-marker markerhandler type='barcode' value='7' preset="hiro" raycaster="objects: .clickable" emitevents="true"
+    <a-marker markerhandler type='barcode' value='0' raycaster="objects: .clickable" emitevents="true"
       cursor="fuse: false; rayOrigin: mouse;" id="markerA">
 
       <a-entity id="bowser-model" gltf-model="#bowser" position="0 0 0" scale="0.09 0.09 0.09" class="clickable"
