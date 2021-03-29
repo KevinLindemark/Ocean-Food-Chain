@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 <!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
 <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-<script src="script-arjs1.js"></script>
+<script src="script-arjs4.js"></script>
 <link rel="stylesheet" href="style-arjs.css">
-
 <body>
-  <a-scene embedded
-    arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" embedded
-    renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" embedded
+    renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene" >
     <!-- I need a way to change the link and value of the button acording to the marker detected-->
     <div class="buttons">
       <button id="hi" class="say-hi-button">Inspect</button>
     </div>
 
     <a-assets>
-      <a-asset-item id="bowser" src="assets/3D-models/pico/phage/h0dkngo4nenh.gltf">
+      <a-asset-item id="bowser" src="assets/3D-models/meso/copepod/scene.gltf">
       </a-asset-item>
     </a-assets>
-    <a-marker markerhandler type='pattern' url='assets/custom-markers/pattern-microscope.patt'
-      raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+    <a-marker markerhandler type='pattern' url='assets/custom-markers/pattern-microscope.patt' raycaster="objects: .clickable" emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;" id="markerA">
 
-      <a-entity id="bowser-model" gltf-model="#bowser" position="0 0 0" scale="0.01 0.01 0.01" class="clickable"
+      <a-entity id="bowser-model" gltf-model="#bowser" position="0 0 0" scale="1.2 1.2 1.2" class="clickable"
         animation-mixer gesture-handler>
       </a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
   </a-scene>
+
 </body>
 
 </html>

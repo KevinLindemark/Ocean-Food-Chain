@@ -1,3 +1,23 @@
+function img(){
+  var img = document.getElementById("img1");
+  if (img.style.display === "none") {
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
+  
+}
+
+function talk(){
+  var talk = document.getElementById("talk1");
+  if (talk.style.display === "none") {
+    talk.style.display = "block";
+  } else {
+    talk.style.display = "none";
+  }
+  
+}
+
 function play() {
   var audio = document.getElementById("audio");
   audio.play();

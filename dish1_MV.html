@@ -15,28 +15,25 @@
   <!-- Import the component -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-  <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls src="assets/3D-models/copepod/scene.gltf"
+  <model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls src="assets/3D-models/pico/phage/h0dkngo4nenh.gltf"
     style="--poster-color:#ffffff00;" alt="A 3D model of an copepod.">
-    
 
-    <button onclick="playVideo()" id="btn" slot="hotspot-mouth" data-position="-0.068 0.869 -0.113"
+
+    <button onclick="img()" id="btn" slot="hotspot-mouth" data-position="-0.068 0.869 -0.113"
       data-normal="-0.307 0.937 -0.116">
-      <audio id="audio" src="assets/sound/bubble.ogg"></audio>
-   
-
-      <video id="video" width="Window.outerWidth" height="Window.outerHeight" autoplay>
-        <source src="assets/video/copepod-hunt.mp4" type="video/mp4">
-      </video>
+      <img width="100vw" height="100vw" id="img1" src="assets/images/phage.jpg" alt="phage"> 
     </button>
 
-    <button onclick="playVideo2()" id="btn" slot="hotspot-arms" data-position="0.006 -0.373 -0.140"
-    data-normal="-0.094 0.044 -0.994">
-    <video id="video2" width="100vw" height="100vw" autoplay>
-      <source src="assets/video/copepod-escape.mp4" type="video/mp4">
-    </video>
+    <button onclick="hideShow()" id="btn" slot="hotspot-arms" data-position="-0.006 -0.080 59.417"
+    data-normal="-0.187 -0.057 0.794">
+<div id="annotation">
+  This is an Bacteriophage that is a virus which eats bacteria! they are in the pico scale which is from 0,0002 to 0,002 mm!
+</div>
   </button>
-
-  </model-viewer>
+  <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; z-index:3; ">
+    👋 Activate AR
+</button>
+</model-viewer>
 
 </body>
 

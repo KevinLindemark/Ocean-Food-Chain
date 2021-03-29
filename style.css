@@ -1,3 +1,9 @@
+
+#annotations #video, #video2, #img1, #talk1 {
+  display: none;
+}
+
+
 body {
   margin: 0;
   padding: 0;
