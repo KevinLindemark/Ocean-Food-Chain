@@ -1,0 +1,124 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.639693989)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9750,
+            "type": "VEC3",
+            "max": [
+                24.457000732421876,
+                28.193300247192384,
+                59.47700119018555
+            ],
+            "min": [
+                -24.457000732421876,
+                -28.193300247192384,
+                0.0012793800560757518
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9750,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 19746,
+            "type": "SCALAR",
+            "max": [
+                9749
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 312984,
+            "uri": "h0dkngo4nenh.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 117000,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 117000,
+            "byteLength": 117000,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 234000,
+            "byteLength": 78984,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "OpenSCAD_Model",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "OpenSCAD_Model",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
